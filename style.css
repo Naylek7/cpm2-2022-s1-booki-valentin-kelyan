@@ -1,42 +1,631 @@
+body{
+    margin: 0;
+	font-size: 16px;
+	background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#body{
+    width: 1200px;
+    margin: auto;
+}
+
 img{
+    width: 170px;
+}
+
+.black{
+    color: black;
+}
+
+i {
+    color: #0065FC ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
     width: 100px;
+}
+
+li{
+    display: inline;
+}
+
+.act{
+    margin-left: 30px;
+}
+
+li:hover a {
+    color: #0065FC ;
+    transition: all 0.2s;
+  }
+
+  form{
+    display: flex;
+    margin-top: 20px;
+}
+
+  label{
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#ville{
+    background-color: white;
+    border: solid 1px rgb(218, 218, 218);
+    padding: 20px;
+    width: 250px;
+}
+
+::placeholder{
+    font-weight: 600;
+    color: black;
+    font-size : 18px
+}
+
+form button{
+    background-color:#0065FC ;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+form button i{
+    display: none !important;
+}
+
+.catégories{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.filtre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filtreText{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.filtreSeul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
     height: 50px;
+    border-radius: 40px;
+    border: solid 2px rgb(201, 201, 201);
+    font-weight: 600;
+    margin: 0px 20px 0px 20px ;
 }
 
-.upside{
+.filtreSeul p{
+    padding: 0px 15px 0px 15px;
+    z-index: 0;
+}
+.filtreSeul i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius:40px;
+    background-color:#DEEBFF ;
+    color: #0065FC ;
+    z-index: 1;
+}
+
+.filtreSeul:hover{
+    background-color: #DEEBFF;
+    transition: all 0.2s;
+}
+
+.infos{
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.i-infos{
+    border: solid 1px #d6d6d6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.information-div{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+
+
+.contenu-centre{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
 }
 
-.barrerecherche{
-    display: flex;
-    flex-direction: row;
+.dans-contenu{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
 }
 
-#filtres{
+.afficher{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dans-contenu h2{
+    margin: 0;
+}
+
+.align-hbg{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.f1{
-    flex-direction: row;
+.contenu-gauche{
+    width: 760px;
+    background-color:#F2F2F2 ;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.f2{
-    flex-direction: row;
+.populaire{
+    width: 390px;
+    background-color:#F2F2F2 ;
+    border-radius: 20px;
 }
 
-.f3{
-    flex-direction: row;
+.box-sizing{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    border: solid 4px white;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgb(218, 219, 235);
 }
 
-.f4{
-    flex-direction: row;
+.box-sizing p{
+    margin: 0;
 }
 
-.f5{
-    flex-direction: row;
+.img-hebergements{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+.img-sizing{
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.text-box{
+    height: 70px;
+    margin-left: 15px;
+}
+
+.bold{
+    font-weight: bold;
+    margin-top: 5px !important;
+}
+
+.margin-text{
+    margin-top: 4px !important ;
+    margin-bottom: 2px !important ;
+}
+
+.etoile i{
+    font-size: 12px;
+    margin: 0px 0 !important;
+}
+
+.etoile{
+    width: 90px;
+    justify-content: space-between;
+}
+
+.box1{
+    background-image: url(images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+.box2{
+    background-image: url(images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+.box3{
+    background-image: url(images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+.box4{
+    background-image: url(images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+.box5{
+    background-image: url(images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+.box6{
+    background-image: url(images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+.box7{
+    background-image: url(images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+.box8{
+    background-image: url(images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.box9{
+    background-image: url(images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+
+
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.contenu-droite{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.contenu-droite h2{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.box-sizing-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 125px;
+    border: solid 4px white;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 25px rgb(218, 219, 235);
+}
+
+.img-sizing-2{
+    width: 150px;
+    height: auto;
+    background-size:cover;
+    border-radius: 13px 0px 0px 13px;
+    z-index: 1;
+}
+
+
+
+
+.activite{
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.dans-colone{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+
+.colonne-style{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:100%;
+}
+
+.shadow{
+    box-shadow: 0px 0px 20px rgb(218, 219, 235);
+    border-radius: 20px;
+}
+
+.center-box{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.right-box{
+    margin-left: 15px;
+}
+
+.left-box{
+    margin-right: 15px;
+}
+
+.right-texte{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.right-texte p{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.activie-img{
+    width: 100%;
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.activie-img-small{
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.bg-image-1{
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.bg-image-2{
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    height: 150px;
+}
+
+.bg-image-3{
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    height: 110px;
+}
+
+.bg-image-4{
+    background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.bg-image-5{
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    height: 130px;
+}
+
+.bg-image-6{
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    height: 130px;
+}
+
+
+
+
+
+footer{
+    background-color:#F2F2F2;
+    padding-top: 30px;
+}
+
+.footer-fin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer-section{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #body{
+        width: 100%;
+        margin: auto;
+    }
+
+    .contenu{
+        margin-top: 40px;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    ul{
+        padding: 0;
+    }
+   
+    form{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .titreSecondaire{
+        width: 90%;
+        margin: auto;
+    }
+
+    #ville{
+        width: 200px;
+    }
+
+    .buttonRecherche{
+        visibility: hidden;
+        display: none;
+    }
+
+    .titreSecondaire form button i{
+        color: white;
+        display: block !important;
+    }
+
+    .catégories{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .filtretext{
+        width: 20%;
+    }
+
+    .filtreSeul{
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .information-div{
+        width: 90%;
+        margin: auto;
+    }
+
+    .contenu-centre{
+        flex-direction: column-reverse ;
+    }
+
+    .populaire{
+        width: 100%;
+        border-radius: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contenu-gauche{
+        width: auto;
+        border-radius: 0;
+        background-color: white;
+    }
+
+    .box-sizing{
+        width: 100%;
+    }
+
+    .align-hbg{
+        flex-direction: column;
+    }
+
+    .contenu-droite{
+        width: 90%;
+    }
+
+    .box-sizing-2{
+        width: auto;
+    }
+
+    .dans-colone{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .activite h2{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .activie-img, .activie-img-small{
+        height: 150px !important;
+    }
+
+    .colonne-style, .small-2, .small-4{
+        margin: 20px 0 0 0 !important;
+    }
+
+    .footer-fin{
+        width: auto;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    form button{
+        border-radius: 20px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li{
+        padding-bottom: 15px;
+        border-bottom: solid 2px rgb(211, 211, 211);
+    }
+
+    .li1{
+        border-bottom: solid 2px #0065FC;
+        color: #0065FC;
+    }
