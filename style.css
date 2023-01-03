@@ -90,7 +90,7 @@ form button{
     font-weight: 600;
 }
 form button i{
-    display: none !important;
+    display: none;
 }
 
 .catégories{
@@ -254,17 +254,17 @@ form button i{
 
 .bold{
     font-weight: bold;
-    margin-top: 5px !important;
+    margin-top: 5px;
 }
 
 .margin-text{
-    margin-top: 4px !important ;
-    margin-bottom: 2px !important ;
+    margin-top: 4px;
+    margin-bottom: 2px;
 }
 
 .etoile i{
     font-size: 12px;
-    margin: 0px 0 !important;
+    margin: 0px 0;
 }
 
 .etoile{
@@ -529,7 +529,7 @@ footer{
 
     .titreSecondaire form button i{
         color: white;
-        display: block !important;
+        display: block;
     }
 
     .catégories{
@@ -597,11 +597,11 @@ footer{
     }
 
     .activie-img, .activie-img-small{
-        height: 150px !important;
+        height: 150px;
     }
 
     .colonne-style, .small-2, .small-4{
-        margin: 20px 0 0 0 !important;
+        margin: 20px 0 0 0;
     }
 
     .footer-fin{
@@ -629,3 +629,4 @@ footer{
         border-bottom: solid 2px #0065FC;
         color: #0065FC;
     }
+}
